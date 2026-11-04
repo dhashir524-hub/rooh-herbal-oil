@@ -55,14 +55,14 @@ export default function ProductScene() {
           color="#d8b75a"
         />
 
+       
         <PresentationControls
-          global
-          rotation={[0, 0, 0]}
-          polar={[-0.15, 0.15]}
-          azimuth={[-0.5, 0.5]}
-          config={{ mass: 2, tension: 400 }}
-          snap={{ mass: 4, tension: 400 }}
-        >
+  global
+  rotation={[0, 0, 0]}
+  polar={[-0.15, 0.15]}
+  azimuth={[-0.5, 0.5]}
+  snap={true}
+>
           <Suspense fallback={null}>
             <RealBottle />
           </Suspense>
